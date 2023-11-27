@@ -7,12 +7,12 @@ warnings.filterwarnings('ignore')
 import numpy as np  # linear algebra
 import pandas as pd  # data processing, CSV file I/O (e.g. pd.read_csv)
 
-df1 = pd.read_csv(r"C:\Users\krish\NLP\True.csv", sep=',', encoding='ISO-8859-1', skiprows=lambda x: x in [11067])
-df2 = pd.read_csv(r"C:\Users\krish\NLP\Fake.csv", sep=',', encoding='ISO-8859-1', skiprows=lambda x: x in [11067])
+df1 = pd.read_csv(r"C:\Users\krish\NLP\NLP\True.csv", sep=',', encoding='ISO-8859-1', skiprows=lambda x: x in [11067])
+df2 = pd.read_csv(r"C:\Users\krish\NLP\NLP\Fake.csv", sep=',', encoding='ISO-8859-1', skiprows=lambda x: x in [11067])
 
 try:
-    df1 = pd.read_csv(r"C:\Users\krish\NLP\True.csv", sep=',', encoding='ISO-8859-1', skiprows=lambda x: x in [11067])
-    df2 = pd.read_csv(r"C:\Users\krish\NLP\Fake.csv", sep=',', encoding='ISO-8859-1', skiprows=lambda x: x in [11067])
+    df1 = pd.read_csv(r"C:\Users\krish\NLP\NLP\True.csv", sep=',', encoding='ISO-8859-1', skiprows=lambda x: x in [11067])
+    df2 = pd.read_csv(r"C:\Users\krish\NLP\NLP\Fake.csv", sep=',', encoding='ISO-8859-1', skiprows=lambda x: x in [11067])
 except pd.errors.ParserError as e:
     print(f"Error reading CSV: {e}")
     # Handle the error as needed
